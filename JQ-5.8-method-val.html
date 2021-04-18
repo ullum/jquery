@@ -1,0 +1,22 @@
+<!-- Mengubah Nilai Form HTML dengan Method val() -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("#nama").val("Ulum");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    Name: <input type="text" id="nama">
+    <button id="button">Rubah!</button>
+</body>
+
+</html>

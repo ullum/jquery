@@ -1,0 +1,29 @@
+<!-- Metode pertama untuk mengambil nilai sebuah elemen HTML dengan jQuery adalah
+menggunakan method text(). 
+Caranya cukup menambahkan method/fungsi text() ke jQuery Selector. -->
+
+<!-- Mengambil nilai HTML dengan Method text() jQuery: -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                var nilai = $("#paragraf").text();
+                alert(nilai);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragraf">
+        Belajar <b>jQuery</b>
+    </p>
+    <button id="button">Ambil Nilai</button>
+</body>
+
+</html>

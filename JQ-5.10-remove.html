@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("#paragraf").remove();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragraf">Ini paragraf yang akan di hapus.</p>
+    <button id="button">Hapus</button>
+</body>
+
+</html>

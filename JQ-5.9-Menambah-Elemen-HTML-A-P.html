@@ -1,0 +1,34 @@
+<!-- 
+Method append()     = menambahkan elemen baru ke bagian akhir
+Method prepend()    = menambahkan elemen baru ke bagian awal
+
+kedua fungsi ini menambahkan elemen baru ke dalam selector yang dicari -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // append()
+            $("#button_app").click(function () {
+                $("#box").append("<p>jQuery is Cool.</p>");
+            })
+            // prepend()
+            $("#button_pre").click(function () {
+                $("#box").prepend("<p>STIKI</p>");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Belajar Jquery</h2>
+    </div>
+    <button id="button_app">Append</button>
+    <button id="button_pre">Prepend</button>
+</body>
+
+</html>

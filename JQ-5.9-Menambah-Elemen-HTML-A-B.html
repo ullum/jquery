@@ -1,0 +1,32 @@
+<!-- Method after() dan before() jQuery sebenarnya sangat mirip dengan append() dan prepend(). 
+Bedanya terletak di posisi di mana element baru akan ditambahkan. 
+Method after() dan before() akan menambahkan elemen baru di luar jQuery Selector. -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // after()
+            $("#button_app").click(function () {
+                $("#box").after("<p>jQuery is Cool.</p>");
+            })
+            // before()
+            $("#button_pre").click(function () {
+                $("#box").before("<p>STIKI</p>");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Belajar Jquery</h2>
+    </div>
+    <button id="button_app">After</button>
+    <button id="button_pre">Before</button>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("#paragraf1").text("<b>#jQuery</b> is Cool...");
+                $("#paragraf2").html("<b>#jQuery</b> is Cool...");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragraf1">
+        Belajar <b>jQuery</b>
+    </p>
+    <p id="paragraf2">
+        Belajar <b>jQuery</b>
+    </p>
+    <button id="button">Rubah</button>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!-- Mengubah dan Menambahkan Atribut HTML dengan jQuery -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                $("#link_google").attr("href", "https://google.com");
+                $("#link_google").attr("title", "Mesin pencarian Google");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p>
+        <a id="link_google">Mesin Pencarian Google</a>
+    </p>
+    <button id="add">Tambah Atribut</button>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- Mengambil Atribut HTML dengan jQuery -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#get").click(function () {
+                var nilai1 = $("a[title]").attr("href");
+                var nilai2 = $("a[title]").attr("title");
+                var nilai3 = $("a[title]").attr("target");
+                $("#tempat").html(nilai1 + "<br>" + nilai2 + "<br>" +
+                    nilai3);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <a href="https://google.com" title="The Best Mesin Pencari" target="_blank">
+        Mesin Pencari Google
+    </a>
+    <button id="get">Ambil Atribut</button>
+    <p id="tempat"></p>
+</body>
+
+</html>

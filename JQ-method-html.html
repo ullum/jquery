@@ -1,0 +1,29 @@
+<!-- untuk mengambil nilai HTML dengan jQuery adalah menggunakan method
+html(). Penggunaannya sama persis dengan method text(). 
+Bedanya,hasil dari method html() akan tetap mempertahankan tag HTML yang ada di dalam elemen HTML tersebut. -->
+
+<!-- Mengambil nilai HTML dengan method html() jQuery: -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                var nilai = $("#paragraf").html();
+                alert(nilai);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragraf">
+        Belajar <b>jQuery</b>
+    </p>
+    <button id="button">Ambil Nilai</button>
+</body>
+
+</html>
