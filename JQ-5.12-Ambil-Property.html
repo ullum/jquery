@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#ambil").click(function(){
+                var nilai = $("#box").css("height");
+                $("#tempat").html(nilai);
+            })
+        });
+    </script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <br>
+    <button id="ambil">Ambil Property</button>  
+    <p id="tempat"></p>
+</body>
+
+</html>
