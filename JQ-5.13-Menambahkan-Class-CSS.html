@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#tambahwarna").click(function(){
+                $("#box").addClass("warna_merah");
+            })
+
+        });
+    </script>
+
+    <style>
+        #box {
+            width: 300px;
+            height: 80px;
+            border: 1px solid black;
+        }
+
+        .warna_merah {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="tambahwarna">Tambah Warna</button>
+</body>
+</html>

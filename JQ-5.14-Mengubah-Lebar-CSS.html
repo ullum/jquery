@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#tambahlebar").click(function () {
+                var lebar_box = $("#box").width();
+                $("#box").width(lebar_box + 40);
+            })
+        });
+    </script>
+
+    <style>
+        #box {
+            width: 400px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="tambahlebar">Tambahkan Lebar</button>
+
+</body>
+</html>
