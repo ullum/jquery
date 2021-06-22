@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#tombolslideup").click(function () {
+                $("h2").slideUp("slow");
+            })
+            $("#tombolslidedown").click(function () {
+                $("h2").slideDown("fast");
+            })
+            $("#tombol").click(function(){
+                $("h2").slideToggle("slow");
+            })
+        });
+    </script>
+</head>
+<body>
+    <h2>Belajar JQuery</h2>
+    <button id="tombolslideup">SlideuP</button>
+    <button id="tombolslidedown">slideDown</button>
+    <button id="tombol">Slide</button>
+</body>
+</html>

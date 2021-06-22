@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belanjar javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#tombolfadeout").click(function (){
+                $("h2").fadeOut("slow");
+            })
+            $("#tombolfadein").click(function (){
+                $("h2").fadeIn("fast");
+            })
+        });
+    </script>
+</head>
+<body>
+    <h2>belajar JQuery</h2>
+    <button id="tombolfadeout">FadeOUt</button>
+    <button id="tombolfadein">FadeIn</button>
+</body>
+</html>

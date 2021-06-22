@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Javascript</title>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#tombol_hide").click(function () {
+                $("#box").hide();
+            })
+    
+            $("#tombol_show").click(function () {
+                $("#box").show(slow);
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="box">
+        <h2>Belajar JQuery</h2>
+    </div>
+    
+    <button id="tombol_hide">Hide</button>
+    <button id="tombol_show">Show</button>
+    
+</body>
+</html>
